@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import contentfulClient from "@/helpers/contentfulClient";
+import contentfulClient from "@/app/helpers/contentfulClient";
 import { IEntry } from "@/app/types/contentful";
 
 export const GET = async (req: NextRequest, res: NextResponse) => {

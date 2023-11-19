@@ -23,7 +23,7 @@ export default function BlogLayout({
             <div className="flex flex-col items-center">
                 <h1 className="text-5xl font-bold select-none mb-5">BLOG</h1>
                 <p className="w-full max-w-[300px] text-color-1 text-center">
-                    It's my blog in which I'm writing about different WEBDEV things that I'm finding interesting. Let's read!
+                    It&apos;s my blog in which I&apos;m writing about different WEBDEV things that I&apos;m finding interesting. Let&apos;s&nbsp;read!
                 </p>
             </div>
             <Suspense fallback={LoadingPosts}>

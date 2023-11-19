@@ -35,9 +35,9 @@ const Post: FC<any> = async ({ params }: { params: { postName: string }}) => {
                 </p>
             </section>
             <img
-                className="max-w-full rounded-3xl shadow-md" 
                 src={postImage.fields.file.url}
                 alt={postImage.fields.file.fileName}
+                className="max-w-full rounded-3xl shadow-md" 
             />
             <div className="[&>h1]:text-[32px] [&>h1]:leading-9 [&>h1]:font-bold [&>h1]:my-8 [&>h2]:text-2xl [&>h2]:font-bold [&>h2]:my-8 [&>h3]:text-xl [&>h3]:font-bold [&>h3]:my-8 [&>p]:my-8 [&_code]:bg-slate-200 [&_code]:p-[1px_3px] [&_code]:rounded-md [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:opacity-70 [&_ol]:list-disc [&_ol]:pl-5 [&_ol]:opacity-70">
                 { documentToReactComponents(postContent, {

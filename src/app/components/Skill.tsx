@@ -1,4 +1,5 @@
 import { FC, ReactNode } from 'react';
+import Image from 'next/image';
 import ReactMarkdown from "react-markdown";
 
 interface SkillProps {
@@ -20,16 +21,27 @@ const Skill: FC<SkillProps> = ({ url, alt, stars, title, description }) => {
         starsArray.push(0);
     }
     
-    const starElements = starsArray.map(starState => {
-        return <img className='w-[15px] h-[15px] p-0' 
+    const starElements = starsArray.map((starState, index) => {
+        return <Image 
+            key={index}
             src={ starState === 1 ? "/svg/star-solid.svg" : "/svg/star-outline.svg" }
-            alt={ starState === 1 ? "Solid star" : "Outline star" } />
+            alt={ starState === 1 ? "Solid star" : "Outline star" }
+            width={15}
+            height={15}
+            className="p-0"
+        />
     });
 
     return (
         <div className="w-full max-w-[250px] min-h-[100px] flex flex-col items-center justify-start px-[20px]">
             <div className="h-[80px] flex self-start items-center text-[14px]">
-                <img src={url} alt={alt} className="h-full select-none p-[20px]" />
+                <Image 
+                    src={url}
+                    alt={alt}
+                    width={80}
+                    height={80}
+                    className="h-full select-none p-[20px]"
+                />
                 <h3 className="font-bold text-[16px]">{ title }</h3>
             </div>
             <div className="w-1/2 flex justify-center mb-[20px] gap-[2px] select-none">

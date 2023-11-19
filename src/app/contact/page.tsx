@@ -15,7 +15,7 @@ const Contact = () => {
         CONTACT PAGE
       </h1>
       <p className="max-w-[350px] text-center text-gray-text leading-5 mb-[30px]">
-        Have some questions? Feel free to contact with me. I'm open for propositions.
+        Have some questions? Feel free to contact with me. I&apos;m open for propositions.
       </p>
       { contactOptions.map((e, index) => <IconLink
         key={index}
