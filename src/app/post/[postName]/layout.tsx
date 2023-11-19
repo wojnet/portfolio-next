@@ -1,5 +1,7 @@
+import PostSkeleton from "@/app/components/PostSkeleton";
 import ReturnButton from "@/app/components/ReturnButton";
 import { Metadata, ResolvingMetadata } from "next";
+import { Suspense } from "react";
 
 export async function generateMetadata(
     { params }: { params: { postName: string }}
@@ -21,7 +23,9 @@ export default function BlogLayout({
     return (
         <div className="w-full max-w-[600px] min-h-[calc(100vh-200px)] flex flex-1 flex-col items-center gap-[15px] p-[20px] mb-[50px]">
             <ReturnButton />
-            { children }
+            <Suspense fallback={<PostSkeleton />}>
+                { children }
+            </Suspense>
         </div>
     );
 }
