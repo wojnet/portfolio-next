@@ -1,27 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --c1: #00005C;
+  --c2: #447fff;
+  --c3: #151b0e;
+  --c4: #61cdff;
+  --c5: #ffe692;
+  --backgroundColor: #ffffff;
+  --grayText: #7979b3;
+  --gray: #545454;
+  --cyan: #6b42ff;
+  --text: #4c43ff;
+
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+
+  color: var(--c1);
+}
+
+html {
+  overflow-y: overlay;
+  scrollbar-gutter: stable;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  width: 100%;
+  min-height: 100vh;
+  background: var(--backgroundColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+}
+
+abbr {
+  text-underline-offset: 4px;
+}
+
+.TextBG {
+  text-shadow: none;
+  background: linear-gradient(to right, var(--c2), var(--c4));
+  box-shadow: 6px 6px 0 #0004;
+  color: var(--backgroundColor);
+  padding-inline: 10px;
+  border-radius: 15px;
 }
