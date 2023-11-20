@@ -9,7 +9,7 @@ interface HeaderNavigationProps {
     tabs: INavigationTab[];
 }
 
-const selectedStyle = "bg-[linear-gradient(to_right,var(--c2),var(--c4))] text-background-color [box-shadow:_3px_4px_0_#0002]";
+const selectedStyle = "bg-[linear-gradient(to_right,var(--color-2),var(--color-4))] text-background-color [box-shadow:_3px_4px_0_#0002]";
 
 const HeaderNavigation: FC<HeaderNavigationProps> = ({ tabs }) => {
     const pathname = usePathname();
