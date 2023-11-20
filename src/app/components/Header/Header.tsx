@@ -7,13 +7,13 @@ export interface INavigationTab {
     additionalPathnames?: string[];
 }
 
-const Header = () => {
-    const navigationTabs: INavigationTab[] = [
-        { href: "/", displayName: "Home" },
-        { href: "/blog", displayName: "Blog", additionalPathnames: ["/post"] },
-        { href: "/contact", displayName: "Contact" }
-    ];
+const navigationTabs: INavigationTab[] = [
+    { href: "/", displayName: "Home" },
+    { href: "/blog", displayName: "Blog", additionalPathnames: ["/post"] },
+    { href: "/contact", displayName: "Contact" }
+];
 
+const Header = () => {
     return (
         <header className="w-full max-w-[1000px] h-[150px] sm:h-[100px] flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-[20px] sm:gap-0 px-[40px]">
             <Link href="/">
