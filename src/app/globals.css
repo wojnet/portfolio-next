@@ -4,18 +4,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --c1: #00005C;
-  --c2: #447fff;
-  --c3: #151b0e;
-  --c4: #61cdff;
-  --c5: #ffe692;
-  --backgroundColor: #ffffff;
-  --grayText: #7979b3;
-  --gray: #545454;
-  --cyan: #6b42ff;
-  --text: #4c43ff;
+@layer base {
+  :root {
+    --color-1: #00005C;
+    --color-2: #447fff;
+    --color-3: #151b0e;
+    --color-4: #61cdff;
+    --color-5: #ffe692;
+    --backgroundColor: #ffffff;
+    --grayText: #7979b3;
+    --gray: #545454;
+    --cyan: #6b42ff;
+    --text: #4c43ff;
+  }
+}
 
+:root {
   scroll-behavior: smooth;
 }
 
@@ -23,7 +27,7 @@
   font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
 
-  color: var(--c1);
+  color: var(--color-1);
 }
 
 html {
@@ -48,7 +52,7 @@ abbr {
 
 .TextBG {
   text-shadow: none;
-  background: linear-gradient(to right, var(--c2), var(--c4));
+  background: linear-gradient(to right, var(--color-2), var(--color-4));
   box-shadow: 6px 6px 0 #0004;
   color: var(--backgroundColor);
   padding-inline: 10px;
