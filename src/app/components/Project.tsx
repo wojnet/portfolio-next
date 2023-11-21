@@ -24,8 +24,10 @@ const Skill: FC<ProjectProps> = ({ imageSrc, imageAlt, url, title, description, 
                     sizes="100%"
                     className="w-full h-auto rounded-[20px] select-none mb-[35px] transition shadow-lg"
                 />
-                <h3 className="text-center text-[24px] font-bold mb-[20px] leading-[22px] group-hover:text-color-2 transition">{ title }</h3>
-                <ReactMarkdown className="[&>p]:text-color-1 [&>p]:text-[15px] text-center m-0 [&>p]:line-clamp-[10] [&>p]:leading-[20px] [&>p]:group-hover:text-color-4 [&>p]:transition">{description}</ReactMarkdown>
+                <section className="flex flex-col items-center">
+                    <h3 className="text-center text-[24px] font-bold mb-[20px] leading-[22px] group-hover:text-color-2 transition">{ title }</h3>
+                    <ReactMarkdown className="[&>p]:text-color-1 [&>p]:text-[15px] text-center m-0 [&>p]:line-clamp-[10] [&>p]:leading-[20px] [&>p]:group-hover:text-color-4 [&>p]:transition">{description}</ReactMarkdown>
+                </section>
             </div>
         </Link>
     );

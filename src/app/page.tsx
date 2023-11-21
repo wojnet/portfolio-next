@@ -35,10 +35,10 @@ export default function Home() {
         />) }
       </div>
       <Link className="text-sm text-background-color bg-emerald-500 mb-[100px] font-bold border rounded-lg p-[2px_7px] transition hover:text-emerald-500 hover:bg-background-color" href="https://github.com/devicons/devicon" target="_blank">Icons I used</Link>
-      <h2 className="text-center text-2xl font-bold mb-[30px]">
-        MY PROJECTS
+      <h2 className="text-center text-2xl font-bold mb-[20px]">
+      🛠️ MY PROJECTS 🛠️
       </h2>
-      <p className="mb-10">
+      <p className="mb-[45px]">
         Some of my work<br />you can see online
       </p>
       <div className="w-full flex justify-center flex-wrap gap-[50px] px-[50px] mb-[50px]">
