@@ -23,6 +23,7 @@ const PostTile: FC<PostTileProps> = ({ title, summary, imageSrc, imageAlt, autho
                     alt={imageAlt}
                     width={0}
                     height={0}
+                    placeholder="blur"
                     className="w-full h-[220px] object-cover rounded-[25px] mb-[20px] shadow-lg transition" 
                 />
                 <h3 className="text-center text-[19px] font-bold mb-[15px] leading-[22px] group-hover:text-color-2 transition">{ title }</h3>

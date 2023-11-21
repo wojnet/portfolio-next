@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Project from './components/Project';
 import Skill from './components/Skill';
 import skills from './skills';
+import BlockCursor from './components/BlockCursor';
 
 export default function Home() {
   const startDate = new Date(2021, 8, 25);
@@ -16,7 +17,7 @@ export default function Home() {
             Hi, I&apos;m Wojciech<br /><span className="TextBG mx-[5px]">WEB&nbsp;DEVELOPER</span>
           </h2>
           <p className="max-w-[300px] sm:max-w-[400px] text-sm sm:text-base mt-[15px]">
-          I&apos;m a programmer technician living near <b>Opole, Poland</b>. I have over <b><MonthCounter startDate={startDate} title="Started in April 2021, date calculated by JavaScript" /></b> of non-commercial experience in Front-End development and generally programming.
+          I&apos;m a programmer technician living near <b>Opole, Poland</b>. I have over <b><MonthCounter startDate={startDate} title="Started in April 2021, date calculated by JavaScript" /></b> of non-commercial experience in Front-End development and generally programming. <BlockCursor />
           </p>
         </section>
         <Image src="/images/wojtek.jpg" alt="Wojtek" width={0} height={0} priority sizes="100%" className="w-2/3 max-w-[350px] rounded-[50px] shadow-[5px_5px_10px_#0002]" />
@@ -24,7 +25,7 @@ export default function Home() {
       <h2 className="text-center text-2xl font-bold mb-[30px]">
         TECHNOLOGIES<br />I&apos;M USING
       </h2>
-      <div className="w-full max-w-[1000px] mb-[20px] grid grid-cols-1 justify-items-center sm:grid-cols-2 min-[850px]:grid-cols-3 gap-[25px_15px] justify-center content-center p-[10px_10px] sm:p-[10px_100px]">
+      <div className="w-full max-w-[1000px] grid grid-cols-1 justify-items-center sm:grid-cols-2 min-[850px]:grid-cols-3 gap-[25px_15px] justify-center content-center p-[10px_10px] sm:p-[10px_100px] mb-[50px]">
         { skills.map((skill, index) => <Skill
           key={index}
           url={skill.url}
@@ -34,7 +35,7 @@ export default function Home() {
           description={skill?.description}
         />) }
       </div>
-      <Link className="text-sm mb-[100px]" href="https://github.com/devicons/devicon" target="_blank">* Icons I used *</Link>
+      <Link className="text-sm text-background-color bg-emerald-500 mb-[100px] font-bold border rounded-lg p-[2px_7px] transition hover:text-emerald-500 hover:bg-background-color" href="https://github.com/devicons/devicon" target="_blank">Icons I used</Link>
       <h2 className="text-center text-2xl font-bold mb-[30px]">
         MY PROJECTS
       </h2>

@@ -33,7 +33,7 @@ const Skill: FC<SkillProps> = ({ url, alt, stars, title, description }) => {
     });
 
     return (
-        <div className="w-full max-w-[250px] min-h-[100px] flex flex-col items-center justify-start px-[20px]">
+        <div className="w-full max-w-[250px] min-h-[100px] flex flex-col items-center justify-start last-of-type:col-span-full px-[20px]">
             <div className="h-[80px] flex self-start items-center text-[14px]">
                 <Image 
                     src={url}

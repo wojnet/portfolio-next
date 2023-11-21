@@ -19,11 +19,18 @@ const config: Config = {
         "color-3": "var(--c3)",
         "color-4": "var(--c4)",
         "color-5": "var(--c5)",
-        "background-color": "var(--backgroundColor)",
+        "background-color": "var(--background-color)",
+        "background-color-05": "var(--background-color-05)",
         "gray-text": "var(--grayText)",
         "gray": "var(--gray)",
         "cyan": "var(--cyan)",
         "text-color": "var(--text)"
+      },
+      keyframes: {
+        cursor: {
+          "0%, 30%, 80%, 100%": { opacity: "1" },
+          "50%": { opacity: "0" }
+        }
       }
     },
   },
