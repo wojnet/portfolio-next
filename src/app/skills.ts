@@ -13,6 +13,7 @@ const skills: ISkill[] = [
     { url: "/svg/html5-plain.svg", stars: 4, alt: "HTML5", title: "HTML", description: "I use **modern HTML5 elements** and I am aware that website layout is very important part of web development." },
     { url: "/svg/css3-plain.svg", stars: 4, alt: "CSS3", title: "CSS", description: "**CSS** gives us many great features. I understand main concepts of stylizing websites in CSS." },
     { url: "/svg/typescript-plain.svg", stars: 2, alt: "TypeScript", title: "TypeScript", description: "It&apos;s a **JavaScript superset** that makes workflow much better. I have basic experience with TypeScript." },
+    { url: "/svg/tailwindcss-plain.svg", stars: 3, alt: "Tailwind CSS", title: "Tailwind CSS", description: "A utility-first CSS framework that provides efficient, and highly customizable way to build modern web applications." },
     { url: "/svg/nodejs-plain.svg", stars: 3, alt: "Node", title: "Node.js", description: "I often use Node.js in my React projects. I also use **Express** framework to write Back-End." },
     { url: "/svg/mysql-plain.svg", stars: 3, alt: "SQL", title: "SQL & MySQL", description: "**SQL** is database language I&apos;ve been working the most time with, especially in **MySQL** database management system." },
     { url: "/svg/github-original.svg", stars: 3, alt: "SQL", title: "Git & GitHub", description: "I use **Git** version controll system with **GitHub** platform for better workflow." },
