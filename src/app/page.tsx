@@ -5,6 +5,7 @@ import Project from './components/Project';
 import Skill from './components/Skill';
 import skills from './skills';
 import BlockCursor from './components/BlockCursor';
+import TypewrittingText from './components/TypewrittingText';
 
 export default function Home() {
   const startDate = new Date(2021, 8, 25);
@@ -13,11 +14,9 @@ export default function Home() {
     <main className="w-full min-h-screen flex flex-col items-center">
       <div className="w-full max-w-[1000px] flex flex-col lg:flex-row justify-start lg:justify-around items-center p-[40px_60px] gap-[40px] mt-[10px] lg:mt-[50px] mb-[50px]">
         <section className='w-full max-w-[450px] flex flex-col items-center text-center gap-[10px] mb-[10px]'>
-          <h2 className="max-w-[600px] text-[24px] sm:text-[28px] font-bold lg:text-[36px] w-full [text-shadow:_0_0_20px_var(--backgroundColor)] m-0">
-            Hi, I&apos;m Wojciech<br /><span className="TextBG mx-[5px]">WEB&nbsp;DEVELOPER</span>
-          </h2>
+          <TypewrittingText />
           <p className="max-w-[300px] sm:max-w-[400px] text-sm sm:text-base mt-[15px]">
-          I&apos;m a programmer technician living near <b>Opole, Poland</b>. I have over <b><MonthCounter startDate={startDate} title="Started in April 2021, date calculated by JavaScript" /></b> of non-commercial experience in Front-End development and generally programming. <BlockCursor />
+          I&apos;m a programmer technician living near <b>Opole, Poland</b>. I have over <b><MonthCounter startDate={startDate} title="Started in April 2021, date calculated by JavaScript" /></b> of non-commercial experience in Front-End development and generally programming.
           </p>
         </section>
         <Image src="/images/wojtek.jpg" alt="Wojtek" width={0} height={0} priority sizes="100%" className="w-2/3 max-w-[350px] rounded-[50px] shadow-[5px_5px_10px_#0002]" />
