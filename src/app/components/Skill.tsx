@@ -1,4 +1,4 @@
-import { FC, ReactNode } from 'react';
+import { FC } from 'react';
 import Image from 'next/image';
 import ReactMarkdown from "react-markdown";
 
@@ -33,7 +33,7 @@ const Skill: FC<SkillProps> = ({ url, alt, stars, title, description }) => {
     });
 
     return (
-        <div className="w-full max-w-[250px] min-h-[100px] flex flex-col items-center justify-start last-of-type:col-span-full px-[20px]">
+        <div className="w-full max-w-[250px] min-h-[100px] flex flex-col items-center justify-start px-[20px]"> {/* last-of-type:col-span-full */}
             <div className="h-[80px] flex self-start items-center text-[14px]">
                 <Image 
                     src={url}
@@ -47,7 +47,7 @@ const Skill: FC<SkillProps> = ({ url, alt, stars, title, description }) => {
             <div className="w-1/2 flex justify-center mb-[20px] gap-[2px] select-none">
                 { starElements }
             </div>
-            <ReactMarkdown className="text-sm w-3/4 text-center">{description}</ReactMarkdown>
+            <ReactMarkdown className="text-sm w-3/4 text-center [&_code]:font-spaceGrotesk">{description}</ReactMarkdown>
         </div>
     );
 }
