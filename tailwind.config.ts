@@ -31,6 +31,9 @@ const config: Config = {
           "0%, 30%, 80%, 100%": { opacity: "1" },
           "50%": { opacity: "0" }
         }
+      },
+      fontFamily: {
+        spaceGrotesk: ['var(--font-space-grotesk)', 'sans']
       }
     },
   },

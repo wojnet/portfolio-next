@@ -1,10 +1,13 @@
 import type { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/react';
-import { Inter } from 'next/font/google';
+import { Space_Grotesk } from 'next/font/google';
 import './globals.css';
 import Header from './components/Header/Header';
 
-const inter = Inter({ subsets: ['latin'] })
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  variable: "--font-space-grotesk"
+})
 
 export const metadata: Metadata = {
   title: 'Wojciech Glid - Portfolio',
@@ -18,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${spaceGrotesk.variable}`}>
         <Header />
         { children }
         <footer className="w-full h-[100px] flex justify-center items-center">
