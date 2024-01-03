@@ -18,7 +18,7 @@ const skills: ISkill[] = [
     { url: "/svg/mysql-plain.svg", stars: 3, alt: "SQL", title: "SQL & MySQL", description: "**`SQL`** is database language I&apos;ve been working the most time with, especially in **`MySQL`** database management system." },
     { url: "/svg/github-original.svg", stars: 3, alt: "Git & GitHub", title: "Git & GitHub", description: "I use **`Git`** version controll system with **`GitHub`** platform for better workflow." },
     { url: "/svg/amazonwebservices-original.svg", stars: 2, alt: "AWS", title: "AWS", description: "**`Amazon Web Services`** are useful in many different ways. I use **`EC2`** and **`S3`** in my apps." },
-    { url: "/svg/threejs-original.svg", stars: 2, alt: "Three.js", title: "Three.js", description: "Really interesting **`Javascript library`** for displaying computer graphins in browser." },
+    { url: "/svg/mongodb-plain.svg", stars: 2, alt: "MongoDB", title: "MongoDB", description: "Flexible **NoSQL** database, stores data in **BSON** documents. Popular choice for its **scalability**." },
 ]
 
 export default skills;

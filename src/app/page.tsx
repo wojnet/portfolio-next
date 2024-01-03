@@ -42,8 +42,18 @@ export default function Home() {
       </p>
       <div className="w-full flex justify-center flex-wrap gap-[50px] px-[50px] mb-[50px]">
         <Project
+          imageSrc="/images/reverse.jpg"
+          imageAlt="Reverse"
+          title="REVERSE"
+          description="Web application created for songwriters to put their creative side into the sheet."
+          url="https://reverse-app.vercel.app/"
+          inDevelopment={false}
+          key={2}
+        />
+        <Project
           imageSrc="/images/bangerify.png"
-          imageAlt="Bangerify" title="BANGERIFY"
+          imageAlt="Bangerify"
+          title="BANGERIFY"
           description="Bangerify is the social media app to share your hot takes on music. It's new project and it's updated frequently."
           url="http://bangerify.com/"
           inDevelopment={false}
@@ -51,5 +61,5 @@ export default function Home() {
         />
       </div>
     </main>
-  )
+  );
 }

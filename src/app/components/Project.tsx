@@ -22,7 +22,7 @@ const Skill: FC<ProjectProps> = ({ imageSrc, imageAlt, url, title, description, 
                     width={0}
                     height={0}
                     sizes="100%"
-                    className="w-full h-auto rounded-[20px] select-none mb-[35px] transition shadow-lg"
+                    className="w-full h-[217.73px] rounded-[20px] select-none mb-[35px] transition shadow-lg object-cover rendering-quality"
                 />
                 <section className="flex flex-col items-center">
                     <h3 className="text-center text-[24px] font-bold mb-[20px] leading-[22px] group-hover:text-color-2 transition">{ title }</h3>
