@@ -50,7 +50,7 @@ export default function Home() {
           inDevelopment={false}
           key={2}
         />
-        <Project
+        {/* <Project
           imageSrc="/images/bangerify.png"
           imageAlt="Bangerify"
           title="BANGERIFY"
@@ -58,7 +58,7 @@ export default function Home() {
           url="http://bangerify.com/"
           inDevelopment={false}
           key={1}
-        />
+        /> */}
       </div>
     </main>
   );

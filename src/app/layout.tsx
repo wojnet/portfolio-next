@@ -25,7 +25,7 @@ export default function RootLayout({
         <Header />
         { children }
         <footer className="w-full h-[100px] flex justify-center items-center">
-          <p className="text-xs">© 2023 Wojciech Glid. All rights reserved</p>
+          <p className="text-xs">© 2024 Wojciech Glid. All rights reserved</p>
         </footer>
         <Analytics />
       </body>
