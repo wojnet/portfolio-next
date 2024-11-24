@@ -49,7 +49,7 @@ const Post: FC<any> = async ({ params }: { params: { postName: string }}) => {
                         [BLOCKS.HR]: () => <p className="w-full h-[1px] text-centerpb-5"></p>,
                         [BLOCKS.EMBEDDED_ASSET]: node => {
                             return <img
-                                className="rounded-xl shadow-md"
+                                className="rounded-xl shadow-md mb-2"
                                 src={node.data.target.fields.file.url}
                                 alt={node.data.target.fields.file.fileName}
                             />

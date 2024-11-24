@@ -7,9 +7,11 @@
 @layer base {
   :root {
     --color-1: #00005C;
-    --color-2: #447fff;
+    /* --color-2: #447fff; */
+    --color-2: #4850e6;
     --color-3: #151b0e;
-    --color-4: #61cdff;
+    /* --color-4: #61cdff; */
+    --color-4: #6584ff;
     --color-5: #ffe692;
     --background-color: #ffffff;
     --background-color-05: #ffffff88;

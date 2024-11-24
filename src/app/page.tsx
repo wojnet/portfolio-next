@@ -15,10 +15,19 @@ export default function Home() {
         <section className='w-full max-w-[450px] flex flex-col items-center text-center gap-[10px] mb-[10px]'>
           <TypewrittingText />
           <p className="max-w-[300px] sm:max-w-[400px] text-sm sm:text-base mt-[15px]">
-          I&apos;m a programmer technician living near <b>Opole, Poland</b>. I have over <b><MonthCounter startDate={startDate} title="Started in April 2021, date calculated by JavaScript" /></b> of non-commercial experience in Front-End development and generally programming.
+            I&apos;m a programmer technician living near <b>Opole,&nbsp;Poland</b>. I started taking an interest in web development and programming <b><MonthCounter startDate={startDate} title="Started in April 2021, date calculated by JavaScript" /></b> ago.
+          </p>
+          <p className="max-w-[300px] sm:max-w-[400px] text-sm sm:text-base mt-[15px]">
+            I'm interested in <b>3D modeling and printing</b>. I also love <b>writing songs</b>, and everything related to&nbsp;<b>music</b>.
           </p>
         </section>
-        <Image src="/images/wojtek.jpg" alt="Wojtek" width={0} height={0} priority sizes="100%" className="w-2/3 max-w-[350px] rounded-[50px] shadow-[5px_5px_10px_#0002]" />
+        <section className="w-2/3 max-w-[350px] flex flex-col items-center gap-2">
+          <Image src="https://utfs.io/f/t6iH1H8S127jCGUd49Sp71PBS6M9AzjkfdebxrWoZTImRa35" alt="Wojtek" width={0} height={0} priority sizes="100%" className="w-full rounded-[50px] shadow-[5px_5px_10px_#0002]" />
+          <p className="text-xs text-gray-text font-mono">
+            PHOTO BY
+            <a href="https://www.instagram.com/miaurb/" className="font-mono" target="_blank"> @MIAURB</a>
+          </p>
+        </section>
       </div>
       <h2 className="text-center text-3xl font-bold font-spaceGrotesk mb-[30px]">
         TECHNOLOGIES<br />I&apos;M USING
@@ -42,23 +51,23 @@ export default function Home() {
       </p>
       <div className="w-full flex justify-center flex-wrap gap-[50px] px-[50px] mb-[50px]">
         <Project
-          imageSrc="/images/reverse.jpg"
+          imageSrc="https://utfs.io/f/t6iH1H8S127jYfn2U3CXFBrZX51V4O8s0kJz7WRiLAxEq6lu"
           imageAlt="Reverse"
           title="REVERSE"
-          description="Web application created for songwriters to put their creative side into the sheet."
+          description="Web application created for **songwriters** to put their creative side into the sheet."
           url="https://reverse-app.vercel.app/"
+          inDevelopment={false}
+          key={1}
+        />
+        <Project
+          imageSrc="https://utfs.io/f/t6iH1H8S127jlEYtkbGPzAQE4XuxWqj0Y2adhTbw7v3ZOf1S"
+          imageAlt="Song"
+          title="MY SONG"
+          description="First, **debut single** that I produced for my band *Paper Limbs*."
+          url="https://open.spotify.com/track/5aQuQIop5l4ZYJcr1wvGDw?si=1589045106814c54"
           inDevelopment={false}
           key={2}
         />
-        {/* <Project
-          imageSrc="/images/bangerify.png"
-          imageAlt="Bangerify"
-          title="BANGERIFY"
-          description="Bangerify is the social media app to share your hot takes on music. It's new project and it's updated frequently."
-          url="http://bangerify.com/"
-          inDevelopment={false}
-          key={1}
-        /> */}
       </div>
     </main>
   );

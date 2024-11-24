@@ -3,7 +3,7 @@ import { IEntry } from "../types/contentful";
 
 export const getPostsData = async(): Promise<IEntry> => {
     const host = headers().get("host");
-    const protocal = process?.env.NODE_ENV === "development" ? "http" : "https";
+    const protocal = process.env.nodeEnv === "development" ? "http" : "https";
 
     const posts = await fetch(`${protocal}://${host}/api/getPostsData`, {
         method: "GET",

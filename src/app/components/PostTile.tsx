@@ -15,8 +15,6 @@ interface PostTileProps {
 const PostTile: FC<PostTileProps> = ({ title, summary, imageSrc, imageAlt, author, creationDate }) => {
     const localCreationDate = new Date(creationDate).toLocaleDateString("en-EN", { day: "2-digit", month: "long", year: "numeric" });
 
-    console.log("src:", imageSrc);
-
     return (
         <Link href={`/post/${title.replaceAll(" ", "_")}`}>
             <div className="w-[300px] h-auto flex flex-col items-center cursor-pointer p-[12px] hover:scale-[0.98] transition group"> {/* hover:outline hover:outline-[1px] hover:outline-gray-text hover:rounded-[30px] */}
