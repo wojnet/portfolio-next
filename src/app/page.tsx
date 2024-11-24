@@ -18,7 +18,7 @@ export default function Home() {
             I&apos;m a programmer technician living near <b>Opole,&nbsp;Poland</b>. I started taking an interest in web development and programming <b><MonthCounter startDate={startDate} title="Started in April 2021, date calculated by JavaScript" /></b> ago.
           </p>
           <p className="max-w-[300px] sm:max-w-[400px] text-sm sm:text-base mt-[15px]">
-            I'm interested in <b>3D modeling and printing</b>. I also love <b>writing songs</b>, and everything related to&nbsp;<b>music</b>.
+            I&apos;m interested in <b>3D modeling and printing</b>. I also love <b>writing songs</b>, and everything related to&nbsp;<b>music</b>.
           </p>
         </section>
         <section className="w-2/3 max-w-[350px] flex flex-col items-center gap-2">
