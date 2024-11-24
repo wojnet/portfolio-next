@@ -22,7 +22,7 @@ export default function Home() {
           </p>
         </section>
         <section className="w-2/3 max-w-[350px] flex flex-col items-center gap-2">
-          <Image src="https://utfs.io/f/t6iH1H8S127jCGUd49Sp71PBS6M9AzjkfdebxrWoZTImRa35" alt="Wojtek" width={0} height={0} priority sizes="100%" className="w-full rounded-[50px] shadow-[5px_5px_10px_#0002]" />
+          <Image src="https://utfs.io/f/t6iH1H8S127jCGUd49Sp71PBS6M9AzjkfdebxrWoZTImRa35" blurDataURL="/images/wojtekBlur.jpg" placeholder="blur" alt="Wojtek" width={0} height={0} priority sizes="100%" className="w-full rounded-[50px] shadow-[5px_5px_10px_#0002]" />
           <p className="text-xs text-gray-text font-mono">
             PHOTO BY
             <a href="https://www.instagram.com/miaurb/" className="font-mono" target="_blank"> @MIAURB</a>
