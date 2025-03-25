@@ -13,12 +13,13 @@ const skills: ISkill[] = [
     { url: "/svg/html5-plain.svg", stars: 4, alt: "HTML5", title: "HTML", description: "I use **`modern HTML5 elements`** and I am aware that website layout is very important part of web development." },
     { url: "/svg/css3-plain.svg", stars: 4, alt: "CSS3", title: "CSS", description: "**`CSS`** gives us many great features. I understand main concepts of stylizing websites in CSS." },
     { url: "/svg/typescript-plain.svg", stars: 2, alt: "TypeScript", title: "TypeScript", description: "It&apos;s a **`JavaScript superset`** that makes workflow much better. I have basic experience with TypeScript." },
-    { url: "/svg/tailwindcss-plain.svg", stars: 3, alt: "Tailwind CSS", title: "Tailwind CSS", description: "A utility-first CSS framework that provides efficient, and highly customizable way to build modern web applications." },
+    { url: "/svg/tailwindcss-plain.svg", stars: 3, alt: "Tailwind CSS", title: "Tailwind CSS", description: "A utility-first **CSS framework** that provides efficient, and highly customizable way to build modern web applications." },
     { url: "/svg/nodejs-plain.svg", stars: 3, alt: "Node", title: "Node.js", description: "I often use Node.js in my React projects. I also use **`Express`** framework to write Back-End." },
     { url: "/svg/mysql-plain.svg", stars: 3, alt: "SQL", title: "SQL & MySQL", description: "**`SQL`** is database language I&apos;ve been working the most time with, especially in **`MySQL`** database management system." },
     { url: "/svg/github-original.svg", stars: 3, alt: "Git & GitHub", title: "Git & GitHub", description: "I use **`Git`** version controll system with **`GitHub`** platform for better workflow." },
     { url: "/svg/amazonwebservices-original.svg", stars: 2, alt: "AWS", title: "AWS", description: "**`Amazon Web Services`** are useful in many different ways. I use **`EC2`** and **`S3`** in my apps." },
-    { url: "/svg/mongodb-plain.svg", stars: 2, alt: "MongoDB", title: "MongoDB", description: "Flexible **NoSQL** database, stores data in **BSON** documents. Popular choice for its **scalability**." },
+    { url: "/svg/csharp-plain.svg", stars: 2, alt: "C# and WPF", title: "C# & WPF", description: "**C#** is a powerful programming language, and **WPF** is a framework for building desktop apps." },
+    { url: "/svg/linux-plain.svg", stars: 2, alt: "Linux", title: "Linux", description: "I have experience with setting up **Ubuntu Server** and and handling simple server tasks." },
 ]
 
 export default skills;
