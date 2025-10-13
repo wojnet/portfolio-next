@@ -23,7 +23,7 @@ export default function Home() {
         </section>
         <section className="w-2/3 max-w-[350px] flex flex-col items-center gap-2">
           <Image 
-            src="https://utfs.io/f/t6iH1H8S127jCGUd49Sp71PBS6M9AzjkfdebxrWoZTImRa35"
+            src="https://pgdwcchs6h.ufs.sh/f/t6iH1H8S127j1AVFlu748YG9Ko7DhpfzWPBRUQctv026rN1e"
             blurDataURL="/images/wojtekBlur.jpg"
             placeholder="blur"
             alt="picture of me"
@@ -31,35 +31,21 @@ export default function Home() {
             height={0}
             priority
             sizes="100%"
-            className="w-full rounded-[50px] shadow-[5px_5px_10px_#0002]"
+            className="w-full rounded-[50px] shadow-[5px_5px_10px_#0002] select-none"
           />
-          <p className="text-xs text-gray-text font-mono">
+          {/* <p className="text-xs text-gray-text font-mono">
             PHOTO BY
             <a href="https://www.instagram.com/miaurb/" className="font-mono" target="_blank"> @MIAURB</a>
-          </p>
+          </p> */}
         </section>
       </div>
-      <h2 className="text-center text-3xl font-bold font-spaceGrotesk mb-[30px]">
-        TECHNOLOGIES<br />I&apos;M USING
-      </h2>
-      <div className="w-full max-w-[1000px] grid grid-cols-1 justify-items-center sm:grid-cols-2 min-[850px]:grid-cols-3 gap-[25px_15px] justify-center content-center p-[10px_10px] sm:p-[10px_100px] mb-[50px]">
-        { skills.map((skill, index) => <Skill
-          key={index}
-          url={skill.url}
-          alt={skill.alt}
-          stars={skill.stars}
-          title={skill.title}
-          description={skill?.description}
-        />) }
-      </div>
-      <Link className="text-sm text-background-color bg-emerald-500 mb-[100px] font-bold border rounded-lg p-[2px_7px] transition hover:text-emerald-500 hover:bg-background-color" href="https://github.com/devicons/devicon" target="_blank">Icons&nbsp;I&nbsp;used</Link>
       <h2 className="text-center text-3xl font-bold font-spaceGrotesk mb-[20px]">
       🛠️ MY PROJECTS 🛠️
       </h2>
       <p className="mb-[45px]">
         Some of my work<br />you can see online
       </p>
-      <div className="w-full flex justify-center flex-wrap gap-[50px] px-[50px] mb-[50px]">
+      <div className="w-full flex justify-center flex-wrap gap-[50px] px-[50px] mb-[150px]">
         <Project
           imageSrc="https://utfs.io/f/t6iH1H8S127jYfn2U3CXFBrZX51V4O8s0kJz7WRiLAxEq6lu"
           imageAlt="Reverse"
@@ -79,6 +65,20 @@ export default function Home() {
           key={2}
         />
       </div>
+      <h2 className="text-center text-3xl font-bold font-spaceGrotesk mb-[30px]">
+        TECHNOLOGIES<br />I&apos;M USING
+      </h2>
+      <div className="w-full max-w-[1000px] grid grid-cols-1 justify-items-center sm:grid-cols-2 min-[850px]:grid-cols-3 gap-[25px_15px] justify-center content-center p-[10px_10px] sm:p-[10px_100px] mb-[50px]">
+        { skills.map((skill, index) => <Skill
+          key={index}
+          url={skill.url}
+          alt={skill.alt}
+          stars={skill.stars}
+          title={skill.title}
+          description={skill?.description}
+        />) }
+      </div>
+      <Link className="text-sm text-background-color bg-emerald-500 mb-[100px] font-bold border rounded-lg p-[2px_7px] transition hover:text-emerald-500 hover:bg-background-color" href="https://github.com/devicons/devicon" target="_blank">Icons&nbsp;I&nbsp;used</Link>
     </main>
   );
 }
