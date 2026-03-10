@@ -33,10 +33,6 @@ export default function Home() {
             sizes="100%"
             className="w-full rounded-[50px] shadow-[5px_5px_10px_#0002] select-none"
           />
-          {/* <p className="text-xs text-gray-text font-mono">
-            PHOTO BY
-            <a href="https://www.instagram.com/miaurb/" className="font-mono" target="_blank"> @MIAURB</a>
-          </p> */}
         </section>
       </div>
       <h2 className="text-center text-3xl font-bold font-spaceGrotesk mb-[20px]">
@@ -56,11 +52,11 @@ export default function Home() {
           key={1}
         />
         <Project
-          imageSrc="https://utfs.io/f/t6iH1H8S127jlEYtkbGPzAQE4XuxWqj0Y2adhTbw7v3ZOf1S"
-          imageAlt="Song"
-          title="MY SONG"
-          description="First, **debut single** that I produced for my band *Paper Limbs*."
-          url="https://open.spotify.com/track/5aQuQIop5l4ZYJcr1wvGDw?si=1589045106814c54"
+          imageSrc="https://pgdwcchs6h.ufs.sh/f/t6iH1H8S127j0KGsJ3ELU7gaBrQ8R1PXhyTdHoOSMvKewcfn"
+          imageAlt="Znaki Dymne"
+          title="MY MUSIC"
+          description="First, **EP** that I've written, produced and mixed for my project **Znaki Dymne**."
+          url="https://linktr.ee/znakidymne"
           inDevelopment={false}
           key={2}
         />
