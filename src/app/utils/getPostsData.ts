@@ -3,15 +3,14 @@ import { IEntry } from "../types/contentful";
 
 export const getPostsData = async(): Promise<IEntry> => {
     const host = headers().get("host");
-    const protocal = process.env.nodeEnv === "development" ? "http" : "https";
+    const protocol = process.env.nodeEnv === "development" ? "http" : "https";
 
-    const posts = await fetch(`${protocal}://${host}/api/getPostsData`, {
+    const posts = await fetch(`${protocol}://${host}/api/getPostsData`, {
         method: "GET",
-        next: {
-            revalidate: 100
+        headers: {
+            "Cache-Control": "no-store"
         }
-    })
-    .then(res => res.json());
+    }).then(res => res.json());
 
     return posts;
 }
