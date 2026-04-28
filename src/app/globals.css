@@ -38,10 +38,24 @@ html {
   scrollbar-gutter: stable;
 }
 
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--color-2), var(--color-4));
+  border-radius: 99px;
+}
+
 body {
   width: 100%;
   min-height: 100vh;
   background: var(--background-color);
+  background-image: radial-gradient(circle, rgba(72, 80, 230, 0.045) 1px, transparent 1px);
+  background-size: 28px 28px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -55,11 +69,29 @@ abbr {
 
 .TextBG {
   text-shadow: none;
-  background: linear-gradient(to right, var(--color-2), var(--color-4));
-  box-shadow: 6px 6px 0 #0004;
+  background: linear-gradient(135deg, var(--color-2), var(--color-4));
+  box-shadow: 4px 4px 0 rgba(72, 80, 230, 0.25), 8px 8px 0 rgba(101, 132, 255, 0.1);
   color: var(--background-color);
-  padding-inline: 10px;
-  border-radius: 15px;
+  padding-inline: 12px;
+  padding-block: 2px;
+  border-radius: 12px;
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-2), var(--color-4));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Gradient accent line below section headings */
+.section-accent {
+  width: 48px;
+  height: 3px;
+  background: linear-gradient(to right, var(--color-2), var(--color-4));
+  border-radius: 99px;
+  margin: 10px 0;
 }
 
 .rendering-quality { image-rendering: optimizeQuality; }

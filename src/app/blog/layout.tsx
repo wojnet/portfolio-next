@@ -19,11 +19,12 @@ export default function BlogLayout({
     children: React.ReactNode
 }) {
     return (
-        <div className="w-full max-w-[1000px] min-h-[calc(100vh-200px)] flex flex-col items-center gap-[50px] mt-[50px]">
+        <div className="w-full max-w-[1000px] mx-auto min-h-[calc(100vh-200px)] flex flex-col items-center gap-[50px] mt-[50px] px-6">
             <div className="flex flex-col items-center">
-                <h1 className="text-5xl font-bold font-spaceGrotesk select-none mb-5">BLOG</h1>
-                <p className="w-full max-w-[300px] text-color-1 text-center">
-                    It&apos;s my blog in which I&apos;m writing about different WEBDEV things that I&apos;m finding interesting. Let&apos;s&nbsp;read!
+                <h1 className="text-5xl font-bold font-spaceGrotesk select-none mb-[8px] gradient-text">BLOG</h1>
+                <div className="section-accent" />
+                <p className="w-full max-w-[300px] text-center text-sm" style={{ color: 'var(--grayText)' }}>
+                    Writing about different things I find interesting. Let's&nbsp;read!
                 </p>
             </div>
             <Suspense fallback={LoadingPosts}>

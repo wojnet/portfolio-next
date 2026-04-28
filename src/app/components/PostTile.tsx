@@ -17,18 +17,19 @@ const PostTile: FC<PostTileProps> = ({ title, summary, imageSrc, imageAlt, autho
 
     return (
         <Link href={`/post/${title.replaceAll(" ", "_")}`}>
-            <div className="w-[300px] h-auto flex flex-col items-center cursor-pointer p-[12px] hover:scale-[0.98] transition group"> {/* hover:outline hover:outline-[1px] hover:outline-gray-text hover:rounded-[30px] */}
-                <Image
-                    src={"https:" + imageSrc} 
-                    alt={imageAlt}
-                    width={0}
-                    height={0}
-                    className="w-full h-[220px] object-cover rounded-[25px] mb-[20px] shadow-lg transition" 
-                    unoptimized
-                />
-                <h3 className="text-center text-[19px] font-bold mb-[15px] leading-[22px] group-hover:text-color-2 transition">{ title }</h3>
-                <p className="text-gray-text text-center m-0 line-clamp-[10] leading-[21px] mb-[15px] group-hover:text-color-4 transition">{ summary }</p>
-                <p className='w-full text-gray-text text-center text-xs italic group-hover:text-color-4 transition'>{ author } - { localCreationDate }</p>
+            <div className="w-full h-auto flex flex-col items-center cursor-pointer p-[16px] transition-all duration-300 group rounded-[28px] border border-transparent hover:border-[rgba(72,80,230,0.2)] hover:shadow-[0_10px_36px_rgba(72,80,230,0.1)] hover:-translate-y-1">
+                <div className="w-full aspect-[4/3] sm:aspect-[6/5] lg:aspect-square relative mb-[20px] rounded-[20px] overflow-hidden shadow-lg transition-shadow duration-300 group-hover:shadow-xl">
+                    <Image
+                        src={"https:" + imageSrc}
+                        alt={imageAlt}
+                        fill
+                        className="object-cover"
+                        unoptimized
+                    />
+                </div>
+                <h3 className="text-center text-[19px] font-bold mb-[15px] leading-[22px] transition-colors duration-300" style={{ color: 'var(--color-1)' }}>{ title }</h3>
+                <p className="text-center m-0 line-clamp-[10] leading-[21px] mb-[15px] text-sm" style={{ color: 'var(--grayText)' }}>{ summary }</p>
+                <p className='w-full text-center text-xs italic' style={{ color: 'var(--grayText)' }}>{ author } · { localCreationDate }</p>
             </div>
         </Link>
     );

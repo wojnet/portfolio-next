@@ -11,7 +11,7 @@ interface IconLinkProps {
 
 const IconLink: FC<IconLinkProps> = ({ href, iconUrl, iconAlt, children }) => {
   return (
-    <Link href={href} target="_blank" className="h-[32px] bg-slate-100 flex items-center gap-3 my-2 p-[3px_8px] rounded-lg shadow-md shadow-slate-200 hover:opacity-75 transition group">
+    <Link href={href} target="_blank" className="h-[40px] flex items-center gap-3 px-[14px] rounded-[12px] transition-all duration-300 group border border-[rgba(72,80,230,0.12)] bg-[rgba(72,80,230,0.05)] hover:bg-[rgba(72,80,230,0.1)] hover:border-[rgba(72,80,230,0.3)] hover:shadow-[0_4px_16px_rgba(72,80,230,0.12)]">
         <Image src={iconUrl} alt={iconAlt} width={24} height={24} className="opacity-90 scale-75" />
         <p className="text-color-1 text-sm group-hover:text-color-2 transition">{ children }</p>
     </Link>

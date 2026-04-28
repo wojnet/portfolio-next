@@ -14,13 +14,14 @@ const TypewrittingText: FC<TypewrittingTextProps> = ({}) => {
             "IT STUDENT"
         ],
         loop: 0,
-        typeSpeed: 100,
-        delaySpeed: 2000
+        typeSpeed: 50,
+        deleteSpeed: 50,
+        delaySpeed: 2000,
     });
 
     return (
         <h2 className="max-w-[600px] text-[24px] sm:text-[28px] font-bold lg:text-[36px] w-full [text-shadow:_0_0_20px_var(--backgroundColor)] m-0 select-none">
-            Hi, I&apos;m Wojciech<br />
+            Hi, I&apos;m Wojciech 👋<br />
             <span className="TextBG mx-[5px]">
                 {text}
             </span>

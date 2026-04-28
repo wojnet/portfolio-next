@@ -22,10 +22,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${spaceGrotesk.variable}`}>
-        <Header />
+        <div className="sticky top-0 z-50 w-full flex justify-center border-b border-[#4850e612]" style={{ background: 'rgba(255,255,255,0.85)', backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)' }}>
+          <Header />
+        </div>
         { children }
-        <footer className="w-full h-[100px] flex justify-center items-center">
-          <p className="text-xs">© {new Date().getFullYear()} Wojciech Glid. All rights reserved</p>
+        <footer className="w-full h-[100px] flex flex-col justify-center items-center gap-1 border-t border-[#4850e610]">
+          <p className="text-xs text-[#7979b3]">© {new Date().getFullYear()} Wojciech Glid. All rights reserved.</p>
+          <p className="text-[10px] text-[#7979b3] opacity-60 tracking-widest uppercase">Built with Next.js</p>
         </footer>
         <Analytics />
       </body>

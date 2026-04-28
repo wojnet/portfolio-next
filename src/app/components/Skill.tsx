@@ -33,9 +33,9 @@ const Skill: FC<SkillProps> = ({ url, alt, stars, title, description }) => {
     });
 
     return (
-        <div className="w-full max-w-[250px] min-h-[100px] flex flex-col items-center justify-start px-[20px]"> {/* last-of-type:col-span-full */}
+        <div className="w-full max-w-[250px] min-h-[100px] flex flex-col items-center justify-start px-[20px] py-[16px] rounded-[20px] transition-all duration-300 hover:-translate-y-1 border border-[rgba(72,80,230,0.1)] bg-[rgba(72,80,230,0.02)] hover:border-[rgba(72,80,230,0.28)] hover:shadow-[0_8px_30px_rgba(72,80,230,0.1)]">
             <div className="h-[80px] flex self-start items-center text-[14px]">
-                <Image 
+                <Image
                     src={url}
                     alt={alt}
                     width={80}

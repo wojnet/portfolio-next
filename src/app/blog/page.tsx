@@ -17,7 +17,7 @@ const Posts: FC = async () => {
     />);
 
     return (
-        <div className="w-full flex justify-center flex-wrap gap-[50px] px-[50px] mb-[50px]">
+        <div className="w-full mb-12 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             { posts }
         </div>
     );

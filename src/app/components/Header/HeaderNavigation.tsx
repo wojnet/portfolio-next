@@ -27,7 +27,7 @@ const HeaderNavigation: FC<HeaderNavigationProps> = ({ tabs }) => {
     
     const linkElements = tabs.map((tab, index) =>
         <li key={index}>
-            <Link href={tab.href} className={twMerge("text-[14px] no-underline p-[3px_10px] rounded-[10px] select-none outline-none [transition:_outline_200ms_ease]", isSelected(tab) ? selectedStyle : "")}>
+            <Link href={tab.href} className={twMerge("text-[14px] font-medium no-underline p-[5px_14px] rounded-[10px] select-none outline-none transition-all duration-200 hover:bg-[rgba(72,80,230,0.08)]", isSelected(tab) ? selectedStyle : "")}>
                 { tab.displayName }
             </Link>
         </li>
