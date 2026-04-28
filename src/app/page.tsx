@@ -32,7 +32,7 @@ export default function Home() {
             Based near <b>Opole,&nbsp;Poland</b>. I got into web development <b><MonthCounter startDate={startDate} title="Started in April 2021, date calculated by JavaScript" /></b> ago, thanks to my dad, and it quickly turned into something I really like.
           </p>
           <p className="max-w-[300px] sm:max-w-[400px] text-sm sm:text-base mt-[15px] leading-relaxed">
-            Besides that, I'm having fun with a <b>3D printer</b>, I'm also writing and producing <b>music</b> for my indie project <b>Znaki&nbsp;Dymne</b>.
+            Besides that, I&apos;m having fun with a <b>3D printer</b>, I&apos;m also writing and producing <b>music</b> for my indie project <b>Znaki&nbsp;Dymne</b>.
           </p>
         </section>
         <section className="w-2/3 max-w-[350px] flex flex-col items-center gap-2">
@@ -137,7 +137,7 @@ export default function Home() {
       <section className="relative z-10 w-full max-w-[760px] px-[30px] sm:px-[60px] mb-[70px] mt-[20px]">
         <div className="rounded-[28px] p-[48px_36px] text-center" style={{ background: 'linear-gradient(135deg, rgba(72,80,230,0.07), rgba(101,132,255,0.11))', border: '1px solid rgba(72,80,230,0.13)' }}>
           <h2 className="text-3xl font-bold font-spaceGrotesk mb-4">
-            Let's build something<br />together!
+            Let&apos;s build something<br />together!
           </h2>
           <p
             className="max-w-[340px] mx-auto text-sm leading-[1.75] mb-8"

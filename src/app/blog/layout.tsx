@@ -24,7 +24,7 @@ export default function BlogLayout({
                 <h1 className="text-5xl font-bold font-spaceGrotesk select-none mb-[8px] gradient-text">BLOG</h1>
                 <div className="section-accent" />
                 <p className="w-full max-w-[300px] text-center text-sm" style={{ color: 'var(--grayText)' }}>
-                    Writing about different things I find interesting. Let's&nbsp;read!
+                    Writing about different things I find interesting. Let&apos;s&nbsp;read!
                 </p>
             </div>
             <Suspense fallback={LoadingPosts}>
