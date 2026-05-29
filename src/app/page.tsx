@@ -42,7 +42,7 @@ export default function Home() {
               src="https://pgdwcchs6h.ufs.sh/f/t6iH1H8S127j1AVFlu748YG9Ko7DhpfzWPBRUQctv026rN1e"
               blurDataURL="/images/wojtekBlur.jpg"
               placeholder="blur"
-              alt="picture of me"
+              alt="Wojciech Glid image"
               width={0}
               height={0}
               priority
